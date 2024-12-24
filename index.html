@@ -1,0 +1,79 @@
+<script>
+
+    // Question 1: Reverse a String 
+
+    // function reversedString(str) {
+    //     let reversed = "";
+    //     for (let i = str.length; i >= 0; i--) {
+    //         reversed += str[i];
+    //     }
+    //     return reversed;
+    // }
+    // console.log(reversedString("interview"))
+
+    // ..................... secend method
+
+    // let str = "interview"
+    // const result = str.split("").reverse().join("")
+    // console.log(result)
+
+    // ................................................................
+
+    // Question 2   : write a function to return longest word in the sentence?
+
+
+    // console.log(findlongestWord("I love coading in Javascript"))
+
+    // function findlongestWord(sentence) {
+
+    //     let longestWord = " "
+
+    //     let words = sentence.split(" ");
+
+    //     for (word of words) {
+    //         if (word.length > longestWord.length) {
+    //             longestWord = word;
+    //         }
+    //     }
+    //     return longestWord;
+    // }
+    // output: Javascript
+
+    // ........................................................................
+
+    // Question 3:  write a function to check string is palindrome or not ?
+
+    // Palingdrom is a word thats read same in forword and backword
+
+    // console.log(palindrom("racecar"))
+
+    // function palindrom(str) {
+    //     const reverseString = str.split("").reverse().join("");
+
+    //     return str === reverseString
+
+    // }
+
+    // output: true
+
+    // ..........................................................................
+
+    // Question 4:  find dupplicate element from ana array 
+
+    console.log(removeDupplicate([1, 2, 2, 3, 4, 4, 5, 5, 6, 6, 67]))
+    function removeDupplicate(arr) {
+        const uniqueElement = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (uniqueElement.indexOf(arr[i]) === -1) {
+                uniqueElement.push(arr[i]);
+            }
+        }
+        return uniqueElement
+    }
+
+
+
+
+
+
+</script>
