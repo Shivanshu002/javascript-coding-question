@@ -2,41 +2,42 @@
 
     // Question 1: Reverse a String 
 
-    // function reversedString(str) {
-    //     let reversed = "";
-    //     for (let i = str.length; i >= 0; i--) {
-    //         reversed += str[i];
-    //     }
-    //     return reversed;
-    // }
-    // console.log(reversedString("interview"))
+    function reversedString(str) {
+        let reversed = "";
+        for (let i = str.length; i >= 0; i--) {
+            reversed += str[i];
+        }
+        return reversed;
+    }
+    console.log(reversedString("interview"))
 
-    // ..................... secend method
+    // ..................... secend method.........................
 
-    // let str = "interview"
-    // const result = str.split("").reverse().join("")
-    // console.log(result)
+    let str = "interview"
+    const result = str.split("").reverse().join("")
+    console.log(result)
 
     // ................................................................
 
     // Question 2   : write a function to return longest word in the sentence?
 
 
-    // console.log(findlongestWord("I love coading in Javascript"))
+    console.log(findlongestWord("I love coading in Javascript"))
 
-    // function findlongestWord(sentence) {
+    function findlongestWord(sentence) {
 
-    //     let longestWord = " "
+        let longestWord = " "
 
-    //     let words = sentence.split(" ");
+        let words = sentence.split(" ");
 
-    //     for (word of words) {
-    //         if (word.length > longestWord.length) {
-    //             longestWord = word;
-    //         }
-    //     }
-    //     return longestWord;
-    // }
+        for (word of words) {
+            if (word.length > longestWord.length) {
+                longestWord = word;
+            }
+        }
+        return longestWord;
+    }
+
     // output: Javascript
 
     // ........................................................................
@@ -45,20 +46,20 @@
 
     // Palingdrom is a word thats read same in forword and backword
 
-    // console.log(palindrom("racecar"))
+    console.log(palindrom("racecar"))
 
-    // function palindrom(str) {
-    //     const reverseString = str.split("").reverse().join("");
+    function palindrom(str) {
+        const reverseString = str.split("").reverse().join("");
 
-    //     return str === reverseString
+        return str === reverseString
 
-    // }
+    }
 
     // output: true
 
     // ..........................................................................
 
-    // Question 4:  find dupplicate element from ana array 
+    // Question 4:  find dupplicate element from ana array
 
     console.log(removeDupplicate([1, 2, 2, 3, 4, 4, 5, 5, 6, 6, 67]))
     function removeDupplicate(arr) {
@@ -70,6 +71,25 @@
         }
         return uniqueElement
     }
+
+    // ..............................................................................................
+
+    // Question 5: Write a function weather to check two strings Anagrams or not ?....................
+
+    function CheckAnagams(str1, str2) {
+        const checkAna1 = str1.split("").sort().join("");
+        const checkAna2 = str2.split("").sort().join("");
+        return checkAna1 === checkAna2;
+
+    }
+    console.log(CheckAnagams("listen", "silent"))
+
+    // .......................................................................................
+
+    // Question 6: Write an function that return the number of vowel in string
+
+    
+
 
 
 
