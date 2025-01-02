@@ -139,7 +139,76 @@
     }
 
 
-    
+    // V.IMP
+    // Question: 8  Write a function that check whether a given string is a palindrome or not?
+    // what is palindrom ? , Ans= A palindrome is a word that reads the same forward and backword. 
+    console.log(isPalindrom("racecar"));
+    function isPalindrom(str) {
+        let result = str.split("").reverse().join("")
+        return result === str
+    }
+
+
+    // V.IMP
+    // Question: 9 Write a function to remove duplicates elements from an array?
+
+    // Traditional method
+
+    console.log(RemoveDupplicateElements([1, 2, 3, 4, 5, 6, 7, 4, 5, 2]))
+
+    function RemoveDupplicateElements(arr) {
+        let uniqueElements = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (uniqueElements.indexOf(arr[i]) === -1) {
+                uniqueElements.push(arr[i]);
+            }
+        }
+        return uniqueElements;
+    }
+
+    // Sorter method
+    console.log(RemoveDupplicateElement([1, 2, 3, 4, 5, 6, 7, 4, 5, 2]))
+    function RemoveDupplicateElement(arr) {
+        return [...new Set(arr)];
+    }
+
+
+    // V.IMP
+    // Question: 10 write a function that checks whether two strings are anagrams or not ?
+    // Ans:  An anagram is a word formed by rearranging the letters of another word.
+    // example: silent , listen 
+
+    // sort() function always rearange the in accending orders.
+
+    console.log(Anagrams("listen", "silent"));
+
+    function Anagrams(str1, str2) {
+
+        const sortedStr1 = str.split("").sort().join("");
+        const sortedStr2 = str.split("").sort().join("");
+
+
+        return sortedStr1 === sortedStr2;
+
+    }
+
+
+    // Question:11 Write a function that return the number of vowels in string.
+    console.log(countVowel("Hello, world!"));
+    function countVowel(str) {
+        const vowel = ["a", "e", "i", "o", "u"];
+        let count = 0
+
+        for (let char of str.toLowerCase()) {
+            if (vowel.includes(char)) {
+                count++;
+            }
+        }
+        return count
+
+    }
+
+
 
 
 
