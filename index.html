@@ -86,13 +86,60 @@
 
     // .......................................................................................
 
-    // Question 6: Write an function that return the number of vowel in string
+    // Question 6:  write a function that return of reverse string ?
+
+    console.log(reversedString("Shivanshu Rajput"))
+
+    function reversedString(str) {
+
+        return str.split("").reverse().join("")
+
+    }
+
+
+    //       traditional method .....................
+
+    // console.log(reversedString("Shivanshu Rajput"))
+    // function reversedString(str) {
+    //     let reversed = ""
+    //     for (let i = str.length-1; i >= 0; i--) {
+    //         reversed += str[i]
+    //     }
+    //     return reversed
+    // }
+
+
+    console.log(reveString('interview'))
+    function reveString(str) {
+
+        let reversed = ""
+        for (let i = str.length - 1; i >= 0; i--) {
+            reversed += str[i]
+        }
+        return reversed;
+    }
+
+
+
+    // Question : 7  write a function to return a longest word in sentence ?
+
+    console.log(finlongestWord("right now i am seeking for job which is right fit for me"))
+
+    function finlongestWord(sentence) {
+
+        const words = sentence.split(" ")
+        let lonegst = ""
+        for (let word of words) {
+            if (word.length > lonegst.length) {
+                lonegst = word
+            }
+        }
+        return lonegst;
+
+    }
+
 
     
-
-
-
-
 
 
 
