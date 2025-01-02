@@ -209,6 +209,20 @@
     }
 
 
+    // Question: 12 Write a function to find a largest number in array ?
+    console.log(FindLargestNumber([2, 3, 8, 4, 9, 21, 5, 6, 7]));
+
+    function FindLargestNumber(arr) {
+        let largest = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+        return largest
+
+    }
+
 
 
 
